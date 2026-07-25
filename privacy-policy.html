@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<!-- deploy: 2026-07-06 -->
+<!-- deploy: 2026-07-24 (§9 에 악보 필기 레이어 추가 — 선생 필기 = 학생에게 읽기전용 공유, 학생 필기 = 비공개) -->
+<!-- deploy: 2026-07-17 (added §9 teacher sharing — 선생님 연동 1.1) -->
 <html lang="en">
 <head>
 <meta charset="utf-8" />
@@ -31,8 +32,8 @@
 <div class="wrap">
   <header>
     <h1>String AI — Privacy Policy</h1>
-    <p class="sub" id="eff-en">Effective date: July 6, 2026</p>
-    <p class="sub" id="eff-ko" hidden>시행일: 2026년 7월 6일</p>
+    <p class="sub" id="eff-en">Effective date: July 24, 2026</p>
+    <p class="sub" id="eff-ko" hidden>시행일: 2026년 7월 24일</p>
     <div class="langbar" role="group" aria-label="Language">
       <button id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
       <button id="btn-ko" aria-pressed="false" onclick="setLang('ko')">한국어</button>
@@ -65,18 +66,21 @@
     <p>Active account: practice metrics are kept as long as you keep your account. Account deletion: all personal data wiped within 30 days; anonymized aggregate metrics may be kept for product improvement (no link back to you). The only exception is the limited transaction records we are legally required to retain (for example, tax and e-commerce record-keeping laws), which are kept for the minimum period the law requires and then deleted.</p>
 
     <h2>8. Service providers and international data transfer</h2>
-    <p>We rely on a small number of trusted service providers (processors) who handle data on our behalf under contract, solely to run the service: <strong>Supabase</strong> (secure database, authentication, and hosting of your account and anonymized practice metrics) and <strong>OpenAI</strong> (API that generates coaching from anonymized numbers only). These providers are located in the United States, so practice metrics may be processed there. By using the app you consent to this transfer. Where data is transferred outside your region (for example, from the EEA or Korea to the United States), we rely on appropriate legal safeguards such as the European Commission's Standard Contractual Clauses. All transfers are protected with TLS encryption, and data is encrypted at rest. OpenAI's API platform is SOC 2 Type II certified. We do not sell or share your data with anyone beyond these processors.</p>
+    <p>We rely on a small number of trusted service providers (processors) who handle data on our behalf under contract, solely to run the service: <strong>Supabase</strong> (secure database, authentication, and hosting of your account and anonymized practice metrics) and <strong>OpenAI</strong> (API that generates coaching from anonymized numbers only). These providers are located in the United States, so practice metrics may be processed there. By using the app you consent to this transfer. Where data is transferred outside your region (for example, from the EEA or Korea to the United States), we rely on appropriate legal safeguards such as the European Commission's Standard Contractual Clauses. All transfers are protected with TLS encryption, and data is encrypted at rest. OpenAI's API platform is SOC 2 Type II certified. Beyond these processors, we do not sell or share your data with anyone — the only exception is a teacher you yourself choose to connect with (see Section 9).</p>
 
-    <h2>9. Posture (biometric) data</h2>
+    <h2>9. Sharing with your linked teacher (optional)</h2>
+    <p>String AI lets a student connect with their own teacher by entering an invite code the teacher shares. This connection is entirely optional and happens only when you (the student) enter the code yourself — we never connect you to anyone automatically. <strong>What your teacher can see while connected:</strong> your practice time, per-axis scores and weakness summary, and your practice plans and homework progress. <strong>What your teacher can never see:</strong> audio or video recordings (they are never stored, so they cannot be shared), your email address, or your account details — your teacher sees only the display name, avatar, and instrument you chose. A connected teacher can also assign a practice plan (homework) and write a short teaching note that our AI coach uses to personalize your lessons. <strong>Markings on the score:</strong> a connected teacher can hand-write markings (bowings, fingerings, reminders) on a piece's sheet-music PDF, and you can view them inside your own app as a separate, read-only layer that you can switch on and off. <strong>Your own markings stay private</strong> — they are stored under your account only, are never shown to your teacher or to anyone else, and are never merged with your teacher's layer. Markings are drawings you make yourself; no audio or video is involved. <strong>Under 14:</strong> connecting requires completed parental consent, and we notify the parent by email when a connection is made. <strong>Disconnecting:</strong> you can disconnect at any time in Profile &gt; My Teacher — your teacher's access stops immediately.</p>
+
+    <h2>10. Posture (biometric) data</h2>
     <p>When the camera analyzes posture and bowing, your phone computes body-position (posture) measurements. Because these may qualify as biometric information, we disclose them separately. <strong>What:</strong> posture angles derived from body keypoints (positions of shoulders, arms, wrists, etc.). <strong>Why:</strong> solely for posture and bow-technique coaching. <strong>Where:</strong> processed entirely on your phone (offline) — neither the raw video nor the body keypoints are ever transmitted off the device. <strong>Retention &amp; destruction:</strong> each frame is discarded immediately after analysis and is never stored permanently; only the session score (numbers) remains. We never sell or share this data with third parties. (Notice, consent, and destruction policy under Illinois BIPA, Texas CUBI, Washington's biometric law, and Korea's PIPA. Granting camera permission constitutes your consent to this collection.)</p>
 
-    <h2>10. Subscriptions and payments</h2>
+    <h2>11. Subscriptions and payments</h2>
     <p>String AI offers auto-renewing monthly subscriptions purchased through the Apple App Store or Google Play. All payment processing is handled entirely by Apple or Google — we never receive or store your credit-card, bank, or billing details. To activate and verify your subscription, we receive a transaction identifier and the product you purchased from the store, and store it linked to your account. We use this only to grant your membership, restore your purchases, and meet tax and accounting obligations. Renewal, cancellation, and refund terms are described in our <a href="./terms-of-service.html">Terms of Service</a>.</p>
 
-    <h2>11. Changes to this policy</h2>
+    <h2>12. Changes to this policy</h2>
     <p>We may update this Privacy Policy as the app evolves or as the law requires. When we make a material change (for example, collecting a new type of data or adding a new processor), we will revise the effective date at the top of this page and, where required, ask affected students or parents to review and re-consent inside the app. Continued use after an update means you accept the revised policy.</p>
 
-    <h2>12. Who we are and how to contact us</h2>
+    <h2>13. Who we are and how to contact us</h2>
     <p>String AI is the data controller responsible for your personal data. For any privacy request — access, export, correction, deletion, withdrawal of consent, or a complaint — contact our privacy officer at <a href="mailto:celloluv92@gmail.com">celloluv92@gmail.com</a>. We respond within 7 days. For urgent privacy issues (suspected data breach, parental concerns), please mark the subject line as <strong>PRIVACY URGENT</strong>. If you are not satisfied with our response, you may also contact your data protection authority (in the EU/EEA, your local supervisory authority; in the Republic of Korea, the Personal Information Protection Commission and the Personal Information Dispute Mediation Committee).</p>
   </main>
 
@@ -106,18 +110,21 @@
     <p>활성 계정: 계정이 유지되는 동안 연습 데이터를 보관합니다. 계정 삭제 시: 30일 이내 모든 개인 데이터가 삭제됩니다. 익명화된 집계 데이터는 제품 개선 목적으로 유지될 수 있으며, 학생의 신원으로 역추적이 불가능합니다. 유일한 예외는 법령상 보관이 의무화된 최소한의 거래 기록(예: 세법·전자상거래법상 기록 보존 의무)으로, 법이 정한 최소 기간만 보관한 뒤 삭제합니다.</p>
 
     <h2>8. 처리 위탁(서비스 제공자) 및 국외 데이터 이전</h2>
-    <p>서비스 운영에만 한정하여, 계약에 따라 개인정보 처리를 위탁받는 소수의 신뢰할 수 있는 수탁자(처리자)를 이용합니다: <strong>Supabase</strong> (계정 및 익명화된 연습 데이터의 보안 데이터베이스·인증·호스팅), <strong>OpenAI</strong> (익명화된 숫자만으로 코칭을 생성하는 API). 이들 제공자는 미국에 소재하므로 연습 데이터가 미국에서 처리될 수 있습니다. 앱 사용은 이 국외 이전에 동의하는 것을 의미합니다. 데이터가 거주 지역 밖(예: EEA 또는 한국 → 미국)으로 이전될 때는 유럽연합 집행위원회의 표준계약조항(SCC) 등 적절한 법적 안전장치에 근거합니다. 모든 전송은 TLS 암호화로 보호되며 저장 시에도 암호화됩니다. OpenAI 의 API 플랫폼은 SOC 2 Type II 인증을 받았습니다. 위 수탁자 외 제3자에게 데이터를 판매·공유하지 않습니다.</p>
+    <p>서비스 운영에만 한정하여, 계약에 따라 개인정보 처리를 위탁받는 소수의 신뢰할 수 있는 수탁자(처리자)를 이용합니다: <strong>Supabase</strong> (계정 및 익명화된 연습 데이터의 보안 데이터베이스·인증·호스팅), <strong>OpenAI</strong> (익명화된 숫자만으로 코칭을 생성하는 API). 이들 제공자는 미국에 소재하므로 연습 데이터가 미국에서 처리될 수 있습니다. 앱 사용은 이 국외 이전에 동의하는 것을 의미합니다. 데이터가 거주 지역 밖(예: EEA 또는 한국 → 미국)으로 이전될 때는 유럽연합 집행위원회의 표준계약조항(SCC) 등 적절한 법적 안전장치에 근거합니다. 모든 전송은 TLS 암호화로 보호되며 저장 시에도 암호화됩니다. OpenAI 의 API 플랫폼은 SOC 2 Type II 인증을 받았습니다. 위 수탁자 외 제3자에게 데이터를 판매·공유하지 않습니다 — 유일한 예외는 학생이 직접 선택해 연결한 선생님입니다 (9항 참조).</p>
 
-    <h2>9. 자세(생체) 데이터</h2>
+    <h2>9. 연결한 선생님과의 공유 (선택 사항)</h2>
+    <p>String AI 는 학생이 자기 선생님이 공유해 준 초대 코드를 입력해 선생님과 연결하는 기능을 제공합니다. 이 연결은 전적으로 선택 사항이며, 학생 본인이 코드를 직접 입력할 때만 이루어집니다 — 자동으로 누군가와 연결되는 일은 없습니다. <strong>연결 중 선생님이 볼 수 있는 것:</strong> 연습 시간, 축별 점수와 약점 요약, 연습 플랜과 숙제 진도. <strong>선생님이 절대 볼 수 없는 것:</strong> 오디오·비디오 녹음(애초에 저장되지 않으므로 공유될 수 없습니다), 이메일 주소, 계정 정보 — 선생님에게는 학생이 정한 표시 이름·아바타·악기만 보입니다. 연결된 선생님은 연습 플랜(숙제)을 배정하고, AI 코치가 레슨을 맞춤화하는 데 사용하는 짧은 티칭 메모를 남길 수 있습니다. <strong>악보 필기:</strong> 연결된 선생님은 곡의 악보 PDF 위에 보잉·운지·표시를 직접 손으로 써 둘 수 있고, 학생은 자기 앱에서 그것을 <strong>읽기 전용 별도 레이어</strong>로 켜고 끄며 볼 수 있습니다. <strong>학생 본인의 필기는 비공개입니다</strong> — 학생 계정에만 저장되며 선생님을 포함한 누구에게도 보이지 않고, 선생님 레이어와 절대 합쳐지지 않습니다. 필기는 학생이 직접 그린 도형·글씨이며 오디오·비디오와는 무관합니다. <strong>14세 미만:</strong> 부모 동의가 완료된 계정만 연결할 수 있으며, 연결이 이루어지면 부모에게 이메일로 알립니다. <strong>연결 해제:</strong> 프로필 &gt; 내 선생님에서 언제든 해제할 수 있으며 — 해제 즉시 선생님의 접근이 중단됩니다.</p>
+
+    <h2>10. 자세(생체) 데이터</h2>
     <p>카메라로 자세·보잉을 분석할 때, 폰 안에서 신체 위치(자세) 측정값을 계산합니다. 이는 생체정보 성격을 가질 수 있어 별도로 안내드립니다. <strong>무엇을:</strong> 신체 키포인트(어깨·팔·손목 등 위치)에서 도출한 자세 각도 수치. <strong>왜:</strong> 자세·활질 코칭을 위해서만. <strong>어디서:</strong> 전부 학생의 폰 안에서(오프라인) 처리되며 — 원본 영상도, 신체 키포인트도 외부로 전송하지 않습니다. <strong>보관·파기:</strong> 각 프레임은 분석 직후 즉시 폐기되며 영구 저장하지 않습니다. 세션 점수(숫자)만 남습니다. 제3자 판매·공유는 절대 하지 않습니다. (미국 일리노이 BIPA·텍사스 CUBI·워싱턴 생체정보법 및 한국 PIPA 에 따른 고지·동의·파기정책. 카메라 권한 허용이 이 수집에 대한 동의로 간주됩니다.)</p>
 
-    <h2>10. 구독 및 결제</h2>
+    <h2>11. 구독 및 결제</h2>
     <p>String AI 는 Apple App Store 또는 Google Play 를 통해 구매하는 월 자동갱신 구독을 제공합니다. 모든 결제 처리는 전적으로 Apple 또는 Google 이 수행하며 — 신용카드·은행·청구 정보는 저희가 받지도, 저장하지도 않습니다. 구독 활성화·검증을 위해 스토어로부터 트랜잭션 식별자와 구매 상품 정보를 전달받아 계정과 연결해 저장합니다. 이는 멤버십 부여, 구매 복원, 세무·회계 의무 이행에만 사용됩니다. 갱신·취소·환불 조건은 <a href="./terms-of-service.html">이용약관</a>에 설명되어 있습니다.</p>
 
-    <h2>11. 방침 변경</h2>
+    <h2>12. 방침 변경</h2>
     <p>앱의 발전이나 법령 요구에 따라 본 방침을 변경할 수 있습니다. 중대한 변경(예: 새로운 데이터 종류 수집, 새 처리자 추가) 시 이 페이지 상단의 시행일을 갱신하고, 필요한 경우 해당 학생·학부모에게 앱 내에서 재검토·재동의를 요청합니다. 변경 후 계속 이용하면 개정 방침에 동의하는 것으로 간주됩니다.</p>
 
-    <h2>12. 개인정보 처리 책임자 및 문의</h2>
+    <h2>13. 개인정보 처리 책임자 및 문의</h2>
     <p>String AI 가 개인정보 처리에 관한 책임을 지는 개인정보처리자(관리자)입니다. 열람·export·정정·삭제·동의 철회·민원 등 모든 개인정보 관련 요청은 개인정보 보호책임자 <a href="mailto:celloluv92@gmail.com">celloluv92@gmail.com</a> 으로 문의해 주세요. 7일 이내에 답변 드립니다. 긴급한 사항 (데이터 유출 의심, 학부모 우려) 의 경우 제목에 <strong>[개인정보 긴급]</strong> 으로 표기해 주세요. 처리 결과에 만족하지 못하실 경우 개인정보 감독기관에 문의·신고하실 수 있습니다 — 대한민국은 개인정보보호위원회(PIPC)·개인정보 분쟁조정위원회(privacy.go.kr, 국번없이 118)·한국인터넷진흥원 개인정보침해신고센터, EU/EEA 는 거주지 감독기관.</p>
   </main>
 
