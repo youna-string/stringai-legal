@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- deploy: 2026-09-01 (§8 수탁자에 Expo 원격 푸시 전달 추가 + §5·§6 'Settings' → 실제 경로 / §7 에 "보호자 동의 미확인 시 계정 삭제" 명문화 — 앱 방침·PRIVACY_POLICY_LAST_UPDATED 와 같은 날짜) -->
+<!-- deploy: 2026-09-02 (§9 14세 미만 = 보호자 이메일 승인 후 연결·승인 전 공유 없음·거절 가능 — 앱 보호자 승인 게이트와 동시) -->
 <!-- deploy: 2026-07-24 (§9 에 악보 필기 레이어 추가 — 선생 필기 = 학생에게 읽기전용 공유, 학생 필기 = 비공개) -->
 <!-- deploy: 2026-07-17 (added §9 teacher sharing — 선생님 연동 1.1) -->
 <html lang="en">
@@ -33,8 +34,8 @@
 <div class="wrap">
   <header>
     <h1>String AI — Privacy Policy</h1>
-    <p class="sub" id="eff-en">Effective date: September 1, 2026</p>
-    <p class="sub" id="eff-ko" hidden>시행일: 2026년 9월 1일</p>
+    <p class="sub" id="eff-en">Effective date: September 2, 2026</p>
+    <p class="sub" id="eff-ko" hidden>시행일: 2026년 9월 2일</p>
     <div class="langbar" role="group" aria-label="Language">
       <button id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
       <button id="btn-ko" aria-pressed="false" onclick="setLang('ko')">한국어</button>
@@ -70,7 +71,7 @@
     <p>We rely on a small number of trusted service providers (processors) who handle data on our behalf under contract, solely to run the service: <strong>Supabase</strong> (secure database, authentication, and hosting of account data, practice metrics, optional teaching notes, and score markings) <strong>OpenAI</strong> (API that generates coaching from the limited context described in Section 4), <strong>Sentry</strong> (anonymous crash reports so we can find and fix bugs — no account identifier is attached), <strong>Expo</strong> (delivery of remote push notifications — it receives only the device push token and the notification text, never your name or email), and <strong>Resend</strong> (sending the parent-consent email and its reminders; it receives only the parent's email address and the message itself). These providers are located in the United States, so that limited data may be processed there. By using the app you consent to this transfer. Where data is transferred outside your region, we rely on appropriate legal safeguards. All transfers use TLS encryption, and data is encrypted at rest. Beyond these processors, we do not sell or share your data — the only exception is a teacher you choose to connect with (see Section 9).</p>
 
     <h2>9. Sharing with your linked teacher (optional)</h2>
-    <p>Teacher connection is optional and occurs only when you enter a teacher’s invite code. <strong>Your teacher can see:</strong> practice time, scores and weakness summary, and practice plans and homework progress. <strong>Your teacher can never see audio or video.</strong> Practice Room recordings you explicitly save remain only in this account’s private folder on your device and are never uploaded or shared. Your teacher also cannot see your email or account details. Teacher score markings appear as a separate read-only layer, while your own markings remain private. Under 14, connecting requires completed parental consent and we notify the parent by email. You can disconnect at any time in Profile &gt; My Teacher.</p>
+    <p>Teacher connection is optional and occurs only when you enter a teacher’s invite code. <strong>Your teacher can see:</strong> practice time, scores and weakness summary, and practice plans and homework progress. <strong>Your teacher can never see audio or video.</strong> Practice Room recordings you explicitly save remain only in this account’s private folder on your device and are never uploaded or shared. Your teacher also cannot see your email or account details. Teacher score markings appear as a separate read-only layer, while your own markings remain private. Under 14, connecting requires completed parental consent, and the parent or guardian must then approve the connection by email; nothing is shared with the teacher until they approve, and they may decline. You can disconnect at any time in Profile &gt; My Teacher.</p>
 
     <h2>10. Posture (biometric) data</h2>
     <p>When the camera analyzes posture and bowing, your phone computes body-position (posture) measurements. Because these may qualify as biometric information, we disclose them separately. <strong>What:</strong> posture angles derived from body keypoints (positions of shoulders, arms, wrists, etc.). <strong>Why:</strong> solely for posture and bow-technique coaching. <strong>Where:</strong> processed entirely on your phone (offline) — neither the raw video nor the body keypoints are ever transmitted off the device. <strong>Retention &amp; destruction:</strong> each frame is discarded immediately after analysis and is never stored permanently; only the session score (numbers) remains. We never sell or share this data with third parties. (Notice, consent, and destruction policy under Illinois BIPA, Texas CUBI, Washington's biometric law, and Korea's PIPA. Granting camera permission constitutes your consent to this collection.)</p>
@@ -114,7 +115,7 @@
     <p>서비스 운영에만 한정해 소수의 수탁자를 이용합니다: <strong>Supabase</strong> (계정·연습 수치·선택 티칭 메모·악보 필기의 보안 데이터베이스·인증·호스팅), <strong>OpenAI</strong> (4항의 제한된 문맥으로 코칭을 생성하는 API), <strong>Sentry</strong> (버그를 찾아 고치기 위한 익명 오류 보고 — 계정 식별자를 붙이지 않습니다), <strong>Expo</strong> (원격 푸시 알림 전달 — 기기의 푸시 토큰과 알림 문구만 전달되며 계정 이름·이메일은 가지 않습니다), <strong>Resend</strong> (보호자 동의 메일과 그 안내 메일 발송 — 보호자 이메일 주소와 메일 본문만 전달됩니다). 이들 제공자는 미국에 소재하므로 해당 제한 데이터가 미국에서 처리될 수 있습니다. 앱 사용은 이 국외 이전에 동의하는 것을 의미하며, 필요한 경우 적절한 법적 안전장치에 근거합니다. 전송은 TLS로 보호되고 저장 시 암호화됩니다. 위 수탁자 외 제3자에게 데이터를 판매·공유하지 않습니다 — 유일한 예외는 학생이 직접 선택해 연결한 선생님입니다(9항).</p>
 
     <h2>9. 연결한 선생님과의 공유 (선택 사항)</h2>
-    <p>선생님 연결은 학생이 선생님의 초대 코드를 직접 입력할 때만 선택적으로 이루어집니다. <strong>선생님이 볼 수 있는 것:</strong> 연습 시간, 요소별 점수와 약점 요약, 연습 플랜과 숙제 진도. <strong>선생님은 오디오·영상을 절대 볼 수 없습니다.</strong> 학생이 직접 저장한 연습실 녹화는 이 계정의 기기 전용 폴더에만 남고 서버 업로드·공유되지 않습니다. 이메일과 계정 정보도 보이지 않습니다. 선생님 악보 필기는 읽기 전용 별도 레이어로 표시되고 학생 본인의 필기는 비공개입니다. 14세 미만은 부모 동의가 완료돼야 연결할 수 있고 부모에게 이메일로 알립니다. 프로필 &gt; 내 선생님에서 언제든 연결을 해제할 수 있습니다.</p>
+    <p>선생님 연결은 학생이 선생님의 초대 코드를 직접 입력할 때만 선택적으로 이루어집니다. <strong>선생님이 볼 수 있는 것:</strong> 연습 시간, 요소별 점수와 약점 요약, 연습 플랜과 숙제 진도. <strong>선생님은 오디오·영상을 절대 볼 수 없습니다.</strong> 학생이 직접 저장한 연습실 녹화는 이 계정의 기기 전용 폴더에만 남고 서버 업로드·공유되지 않습니다. 이메일과 계정 정보도 보이지 않습니다. 선생님 악보 필기는 읽기 전용 별도 레이어로 표시되고 학생 본인의 필기는 비공개입니다. 14세 미만은 부모 동의가 완료된 뒤에도 보호자가 이메일로 연결을 승인해야 연결됩니다. 승인 전에는 선생님에게 아무것도 공유되지 않으며, 보호자는 거절할 수도 있습니다. 프로필 &gt; 내 선생님에서 언제든 연결을 해제할 수 있습니다.</p>
 
     <h2>10. 자세(생체) 데이터</h2>
     <p>카메라로 자세·보잉을 분석할 때, 폰 안에서 신체 위치(자세) 측정값을 계산합니다. 이는 생체정보 성격을 가질 수 있어 별도로 안내드립니다. <strong>무엇을:</strong> 신체 키포인트(어깨·팔·손목 등 위치)에서 도출한 자세 각도 수치. <strong>왜:</strong> 자세·활질 코칭을 위해서만. <strong>어디서:</strong> 전부 학생의 폰 안에서(오프라인) 처리되며 — 원본 영상도, 신체 키포인트도 외부로 전송하지 않습니다. <strong>보관·파기:</strong> 각 프레임은 분석 직후 즉시 폐기되며 영구 저장하지 않습니다. 세션 점수(숫자)만 남습니다. 제3자 판매·공유는 절대 하지 않습니다. (미국 일리노이 BIPA·텍사스 CUBI·워싱턴 생체정보법 및 한국 PIPA 에 따른 고지·동의·파기정책. 카메라 권한 허용이 이 수집에 대한 동의로 간주됩니다.)</p>
