@@ -36,6 +36,8 @@
     <h1>String AI — Terms of Service</h1>
     <p class="sub" id="eff-en">Effective date: September 11, 2026</p>
     <p class="sub" id="eff-ko" hidden>시행일: 2026년 9월 11일</p>
+    <p class="sub" id="next-en">Scheduled change: the “My Scores” paragraph in section 9 takes effect on October 4, 2026. Until then, these Terms apply as they are.</p>
+    <p class="sub" id="next-ko" hidden>개정 예정: 9. 지식재산권의 ‘내 악보’ 문단은 2026년 10월 4일부터 시행됩니다. 그 전까지는 지금 약관이 그대로 적용됩니다.</p>
     <div class="langbar" role="group" aria-label="Language">
       <button id="btn-en" aria-pressed="true" onclick="setLang('en')">English</button>
       <button id="btn-ko" aria-pressed="false" onclick="setLang('ko')">한국어</button>
@@ -84,6 +86,7 @@
 
     <h2>9. Intellectual property</h2>
     <p>The app, its software, design, and original content are owned by String AI and its licensors. We grant you a personal, non-transferable, non-exclusive license to use the app for its intended purpose. Sheet music and other third-party materials remain the property of their respective owners. Your practice data belongs to you.</p>
+    <p><strong>My Scores (sheet music you import).</strong> <em>(Takes effect on October 4, 2026.)</em> My Scores is available in student accounts and is for your personal, non-commercial practice. Import music into My Scores only if you have the right to use it — for example, sheet music you bought, music you wrote, or sheet music whose copyright has expired. Do not import music you are not allowed to copy, and do not remove copy protection to import it; locked PDFs cannot be opened. Imported files and anything the app makes from them stay only on your device; they are not backed up and cannot be recovered once deleted (our <a href="./privacy-policy.html">Privacy Policy</a> explains when that happens). String AI does not receive, review, store, or share them, and the app has no feature for sending them to anyone. A title you type for a score is handled as described in our <a href="./privacy-policy.html">Privacy Policy</a>. You are responsible for making sure your use follows copyright law. This does not limit any responsibility String AI has under applicable law. Importing music gives you no rights in it beyond those you already have. The app’s reading of your music may contain mistakes; check it before you practice.</p>
 
     <h2>10. Disclaimers and limitation of liability</h2>
     <p>The app is provided "as is" and "as available," without warranties of any kind to the fullest extent permitted by law. To the maximum extent permitted by applicable law, String AI is not liable for indirect, incidental, or consequential damages, or for any loss arising from reliance on AI feedback. Nothing in these Terms limits liability that cannot be limited by law (including certain rights of consumers and minors).</p>
@@ -146,6 +149,7 @@
 
     <h2>9. 지식재산권</h2>
     <p>앱과 그 소프트웨어·디자인·오리지널 콘텐츠는 String AI 및 라이선서에게 귀속됩니다. 이용자에게는 본래 목적에 한해 개인적·양도불가·비독점 라이선스가 부여됩니다. 악보 등 제3자 자료의 권리는 각 소유자에게 있습니다. 이용자의 연습 데이터는 이용자의 것입니다.</p>
+    <p><strong>내 악보(직접 가져온 악보).</strong> <em>(2026년 10월 4일 시행 예정)</em> 내 악보는 학생 계정에서 쓸 수 있으며 개인적·비영리 연습용입니다. 내 악보에는 이용할 권리가 있는 악보만 가져오세요. 예를 들어 직접 구입한 악보, 본인이 만든 곡, 저작권 보호기간이 끝난 악보입니다. 복제가 허락되지 않은 악보는 가져오지 말고, 가져오려고 복제 방지 장치를 풀지 마세요. 잠긴 PDF 는 열리지 않습니다. 가져온 파일과 앱이 이를 바탕으로 만든 내용은 이용자의 기기에만 저장되고 백업되지 않으며, 지워지면 되살릴 수 없습니다(지워지는 경우는 <a href="./privacy-policy.html">개인정보처리방침</a>에 설명합니다). String AI 는 이를 받거나 검토·보관·공유하지 않으며, 앱에는 이를 다른 사람에게 보내는 기능이 없습니다. 악보에 직접 적은 제목은 <a href="./privacy-policy.html">개인정보처리방침</a>에 설명한 대로 처리됩니다. 이용자 자신의 이용이 저작권법에 맞는지는 이용자가 확인해야 하며, 그 책임은 이용자에게 있습니다. 이 조항은 String AI 가 법에 따라 지는 책임을 줄이지 않습니다. 악보를 가져온다고 이미 가진 권리 외에 새 권리가 생기지 않습니다. 앱이 읽은 악보에는 틀린 곳이 있을 수 있으니 연습 전에 확인하세요.</p>
 
     <h2>10. 면책 및 책임 제한</h2>
     <p>앱은 법이 허용하는 최대 범위에서 어떠한 보증도 없이 "있는 그대로", "이용 가능한 대로" 제공됩니다. 관련 법이 허용하는 최대 범위에서 String AI 는 간접·부수적·결과적 손해나 AI 피드백 의존으로 인한 손실에 대해 책임지지 않습니다. 다만 법으로 제한할 수 없는 책임(소비자·미성년자의 특정 권리 등)은 본 약관으로 제한되지 않습니다.</p>
@@ -180,6 +184,8 @@
     document.getElementById('doc-ko').hidden = en;
     document.getElementById('eff-en').hidden = !en;
     document.getElementById('eff-ko').hidden = en;
+    document.getElementById('next-en').hidden = !en;
+    document.getElementById('next-ko').hidden = en;
     document.getElementById('foot-en').hidden = !en;
     document.getElementById('foot-ko').hidden = en;
     document.getElementById('btn-en').setAttribute('aria-pressed', String(en));
