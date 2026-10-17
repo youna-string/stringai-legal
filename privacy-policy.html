@@ -196,8 +196,10 @@ All transfers use TLS encryption over the internet, and stored data is encrypted
     document.getElementById('btn-en').setAttribute('aria-pressed', String(en));
     document.getElementById('btn-ko').setAttribute('aria-pressed', String(!en));
   }
-  // Default to Korean if the browser prefers Korean.
-  if ((navigator.language || '').toLowerCase().indexOf('ko') === 0) setLang('ko');
+  // Language: the app opens this page with ?lang=ko|en (its own language setting, which can differ from the phone's); otherwise Korean if the browser prefers Korean.
+  var langParam = (/[?&]lang=(ko|en)(?:&|$)/.exec(location.search) || [])[1];
+  if (langParam) setLang(langParam);
+  else if ((navigator.language || '').toLowerCase().indexOf('ko') === 0) setLang('ko');
 </script>
 </body>
 </html>
